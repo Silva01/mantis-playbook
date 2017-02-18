@@ -1,0 +1,18 @@
+---
+  # PlayBook para instalação do Mantis com MySQL
+  # @author Daniel Silva
+  # @version 1.0.0
+
+  - name: Instalação do Mantis
+    hosts: mantis
+    remote_user: root
+
+    roles:
+      - mantis_install
+
+  - name: Instalação do MySQL
+    hosts: db
+    remote_user: root
+
+    roles:
+      - db_install
