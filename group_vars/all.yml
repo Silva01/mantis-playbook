@@ -1,0 +1,5 @@
+---
+  # Variaveis Globais
+
+  db_user: user
+  db_pass: 123
